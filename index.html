@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Notifications page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+    :root {
+      --red: hsl(1, 90%, 64%);
+      --blue: hsl(219, 85%, 26%);
+      --very-light-grayish-blue: hsl(210, 60%, 98%);
+      --light-grayish-blue-1: hsl(211, 68%, 94%);
+      --light-grayish-blue-2: hsl(205, 33%, 90%);
+      --grayish-blue: hsl(219, 14%, 63%);
+      --dark-grayish-blue: hsl(219, 12%, 42%);
+      --very-dark-blue: hsl(224, 21%, 14%);
+    }
+
+    * {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen w-full bg-[var(--light-grayish-blue-2)] md:px-4 md:py-6">
+  <main class="p-6 space-y-4 bg-white max-w-2xl rounded-xl mx-auto">
+
+    <div class="flex items-center gap-4">
+      <span class="font-bold text-[var(--dark-blue)]">Notifications</span>
+      <span class="px-2.5 bg-[var(--blue)] text-white rounded-md">3</span>
+      <a class="text-sm text-[var(--dark-grayish-blue)] ml-auto hover:text-[var(--blue)] transition-colors" href="">Mark
+        all as read</a>
+    </div>
+
+    <!-- notification 1 -->
+    <div class="flex gap-4 p-4 rounded-xl bg-[var(--very-light-grayish-blue)]">
+      <img class="h-10" src="./assets/images/avatar-mark-webber.webp" alt="">
+      <div class="flex flex-col ">
+        <span
+          class="after:h-2.5 after:w-2.5 after:bg-[var(--red)] after:rounded-full after:absolute after:m-2 relative"><a
+            class="font-bold text-[var(--dark-blue)] hover:text-[var(--blue)] transition-colors" href="">Mark
+            Webber</a>
+          <span class="text-[var(--dark-grayish-blue)]">
+            reacted to your recent post
+          </span>
+          <a class="font-bold text-[var(--dark-grayish-blue)] hover:text-[var(--blue)] transition-colors" href="">My
+            first tournament today!</a></span>
+        <span class="text-sm text-[var(--grayish-blue)]">1m ago</span>
+      </div>
+    </div>
+
+    <!-- notification 2 -->
+    <div class="flex gap-4 p-4 rounded-xl bg-[var(--very-light-grayish-blue)]">
+      <img class="h-10" src="./assets/images/avatar-angela-gray.webp" alt="">
+      <div class="flex flex-col ">
+        <span
+          class="after:h-2.5 after:w-2.5 after:bg-[var(--red)] after:rounded-full after:absolute after:m-2 relative"><a
+            class="font-bold text-[var(--dark-blue)] hover:text-[var(--blue)] transition-colors" href="">Angela Gray</a>
+          <span class="text-[var(--dark-grayish-blue)]">
+            has followed you
+          </span>
+        </span>
+        <span class="text-sm text-[var(--grayish-blue)]">5m ago</span>
+      </div>
+    </div>
+
+    <!-- notification 3 -->
+    <div class="flex gap-4 p-4 rounded-xl bg-[var(--very-light-grayish-blue)]">
+      <img class="h-10" src="./assets/images/avatar-jacob-thompson.webp" alt="">
+      <div class="flex flex-col ">
+        <span
+          class="after:h-2.5 after:w-2.5 after:bg-[var(--red)] after:rounded-full after:absolute after:m-2 relative"><a
+            class="font-bold text-[var(--dark-blue)] hover:text-[var(--blue)] transition-colors" href="">Jacob
+            Thompson</a>
+          <span class="text-[var(--dark-grayish-blue)]">
+            has joined your group
+          </span>
+          <a class="font-bold text-[var(--blue)] " href="">Chess Club</a></span>
+        <span class="text-sm text-[var(--grayish-blue)]">1 day ago</span>
+      </div>
+    </div>
+
+    <!-- notification 2 -->
+    <div class="flex gap-4 p-4 rounded-xl bg-[var(--very-light-grayish-blue)]">
+      <img class="h-10" src="./assets/images/avatar-angela-gray.webp" alt="">
+      <div class="flex flex-col ">
+        <span
+          class="after:h-2.5 after:w-2.5 after:bg-[var(--red)] after:rounded-full after:absolute after:m-2 relative"><a
+            class="font-bold text-[var(--dark-blue)] hover:text-[var(--blue)] transition-colors" href="">Angela Gray</a>
+          <span class="text-[var(--dark-grayish-blue)]">
+            has followed you
+          </span>
+        </span>
+        <span class="text-sm text-[var(--grayish-blue)]">5m ago</span>
+      </div>
+    </div>
+
+    <!-- notification 3 -->
+    <div class="flex gap-4 p-4">
+      <img class="h-10" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
+      <div class="flex flex-col ">
+        <span class=""><a class="font-bold text-[var(--dark-blue)] hover:text-[var(--blue)] transition-colors"
+            href="">Rizky Hasanuddin</a>
+          <span class="text-[var(--dark-grayish-blue)]">
+            send you a private message
+          </span>
+        </span>
+        <span class="text-sm text-[var(--grayish-blue)]"> 5 days ago</span>
+        <span class="p-4 border rounded-md mt-2 text-[var(--dark-grayish-blue)]">
+          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+          I'm already having lots of fun and improving my game.
+        </span>
+      </div>
+    </div>
+
+    <!-- notification 6 -->
+    <div class="flex gap-4 p-4">
+      <img class="h-10" src="./assets/images/avatar-nathan-peterson.webp" alt="">
+      <div class="flex flex-col ">
+        <span class=""><a class="font-bold text-[var(--dark-blue)] hover:text-[var(--blue)] transition-colors"
+            href="">Mark
+            Webber</a>
+          <span class="text-[var(--dark-grayish-blue)]">
+            reacted to your recent post
+          </span>
+          <a class="font-bold text-[var(--dark-grayish-blue)] hover:text-[var(--blue)] transition-colors"
+            href="">end-game strategies to increase your win rate</a></span>
+        <span class="text-sm text-[var(--grayish-blue)]">1 week ago</span>
+      </div>
+    </div>
+
+    <!-- notification 7 -->
+    <div class="flex gap-4 p-4">
+      <img class="h-10" src="./assets/images/avatar-anna-kim.webp" alt="">
+      <div class="flex flex-col ">
+        <span class=""><a class="font-bold text-[var(--dark-blue)] hover:text-[var(--blue)] transition-colors"
+            href="">Anna Kim</a>
+          <span class="text-[var(--dark-grayish-blue)]">
+            left the group
+          </span>
+          <a class="font-bold text-[var(--blue)] " href="">Chess Club</a></span>
+        </span>
+        <span class="text-sm text-[var(--grayish-blue)]">2 weeks ago</span>
+      </div>
+    </div>
+    <!-- 
+    Notifications 3
+
+    Mark all as read
+
+    Mark Webber reacted to your recent post My first tournament today!
+    1m ago
+
+    Angela Gray followed you
+    5m ago
+
+    Jacob Thompson has joined your group Chess Club
+    1 day ago
+
+    Rizky Hasanuddin sent you a private message
+    5 days ago
+    Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+    I'm already having lots of fun and improving my game.
+
+    Kimberly Smith commented on your picture
+    1 week ago
+
+    Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
+    2 weeks ago
+
+    Anna Kim left the group Chess Club
+    2 weeks ago -->
+
+  </main>
+</body>
+
+</html>
